@@ -77,6 +77,16 @@ import java.util.Scanner;
             System.out.println("Привет, " + name + "!");
         }
 
+            // *Написать метод, который определяет является ли год високосным, и выводит сообщение в
+            //консоль. Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й –
+            //високосный.
+            private static void checkPrintLeapYear(int year) {
+                if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+                    System.out.println("Год " + year + " является високосным");
+                else
+                    System.out.println("Год " + year + " не является високосным");
+        }
+
 
     }
 
